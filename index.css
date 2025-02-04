@@ -1,0 +1,328 @@
+body {
+    background-color: rgba(249, 246, 246, 0.902);
+    background-image: url();
+    background-size: cover; /* Adjusts the image to cover the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    margin: 0;
+    font-family: Arial, sans-serif;
+   
+}
+.hero1{
+    background-position: center;
+    background-size: cover;
+    
+}
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: url('navbar-bg.jpg') no-repeat center center; /* Background image */
+    background-size: cover; /* Ensure the image covers the navbar */
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav .logo h1 {
+    margin-left: 12px;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: rgb(246, 233, 233);
+}
+
+.nav .logo b {
+    color: orange;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul li {
+    margin-right: 20px;
+    position: relative; /* Required for pseudo-element positioning */
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav ul a:hover {
+    color: orange;
+}
+
+.nav ul a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #ff511c;
+    position: absolute;
+    left: 0;
+    bottom: -5px; 
+    transition: width 0.3s ease-in-out;
+}
+
+.nav ul a:hover::after {
+    width: 100%; 
+}
+.nav ul a:hover{
+    color: rgb(113, 34, 2);
+}
+
+input {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.singin {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    margin-right: 10px;
+    border-radius: 15px;
+}
+
+.singin:hover {
+    background-color: white;
+    color: black;
+}
+
+.singup {
+    background-color: #ff511c;
+    color: #ffffff;
+    border-radius: 15px;
+    height: 44px;
+    width: 95px;
+}
+
+.singup:hover {
+    background-color: #ff3300;
+}
+
+.hero1 {
+    display: block;
+    /* Pushes the hero image below the fixed navbar */
+    object-fit: cover;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 800px; /* Ensure it matches the navbar and hero section */
+    object-fit: cover; /* Keeps the image proportional and covers the area */
+}
+.fmenu{
+        margin-top: 30px;
+        background-color: rgba(40, 30, 30, 0.902);;
+        width: 100%;
+        height: 60px;
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+    }
+#f{
+   text-decoration: none;
+   align-items: center;
+   color: #ff3300;
+}
+.menu_ul{
+    
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        list-style: none;
+        padding: 0; 
+        margin: 0;
+    }
+.menu_ul li button{
+    color: white;
+    border-radius: 20px;
+}
+.menu_ul li button:hover{
+    font-size: 18px;
+    size: 10px;
+    background-color:#ff3300; 
+}
+    
+
+.menu_ul li {
+    margin: 0 10px; 
+}
+  /* Custom CSS for the <h4> tag */
+  .menu_h h4 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f74e24; /* A vibrant color */
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu_h h4 a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.menu-item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.menu-item h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.menu-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.menu-item .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ff6f61;
+}
+/*---about us */
+.A_image{
+  float: right;
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  background-size: cover;
+
+}
+.A_image img{
+    width: 450px;
+    height: 500px;
+}
+
+
+#about p{
+    font-size: 17px;
+    line-height: 1.8;
+    color: #444;
+    font-family: 'Georgia', serif; /* Use a serif font for a classic look */
+    margin-bottom: 25px;
+    text-align: justify; /* Justify text for a clean look */
+    padding: 10px;
+    background-color: #f9f9f9; /* Light background for the paragraph */
+    border-left: 4px solid #ff6f61; /* Add a colored border to the left */
+  /*  background: linear-gradient(90deg, #e68f79, #fff);*/
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+/*SERVISE SECTION */
+.servise_box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    text-align: center;
+    margin: 20px;
+    max-width: 250px;
+}
+
+.con-1 {
+    margin-top: 55px;
+    width: 110px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h5 {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+.con-1:hover{
+    width: 120px;
+    border: 3px solid black;
+}
+
+
+/*FAQ section */
+.faq-container {
+    width: 99%;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+.faq-question {
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+.faq-answer {
+    display: none;
+    padding-top: 10px;
+    color: #555;
+}
+.faq-question:hover {
+    color: #e74c3c;
+}
