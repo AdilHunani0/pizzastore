@@ -6,6 +6,7 @@ body {
     background-repeat: no-repeat; /* Prevents the image from repeating */
     margin: 0;
     font-family: Arial, sans-serif;
+    font-style: "Montserrat", sans-serif;
    
 }
 .hero1{
@@ -132,7 +133,7 @@ input {
 }
 .fmenu{
         margin-top: 30px;
-        background-color: rgba(40, 30, 30, 0.902);;
+        background-color: rgba(40, 30, 30, 0.902);
         width: 100%;
         height: 60px;
         display: flex; 
@@ -242,7 +243,6 @@ input {
     height: 500px;
 }
 
-
 #about p{
     font-size: 17px;
     line-height: 1.8;
@@ -325,4 +325,22 @@ p {
 }
 .faq-question:hover {
     color: #e74c3c;
+}
+/*FOOTEER*/
+footer{
+    margin-top: 30px;
+    background-color:#333;
+    color: white;
+    font-style: "Montserrat", sans-serif;
+    width: 100%;
+    
+    text-align: center;
+    padding: 20px;  
+}
+footer h4{
+    text-decoration: underline; 
+    font-weight: lighter;
+}
+footer p{
+    color: white;
 }
