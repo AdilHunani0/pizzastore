@@ -24,6 +24,13 @@ const menuData = [
     },
     {
         category: 'pizza',
+        name: 'Thik crush',
+        description: 'Pizza with thick layer.',
+        price: '$17',
+        image: 'pizza-1.jpg'
+    },
+    {
+        category: 'pizza',
         name: 'Hot & spicy Pizza',
         description: 'Pizza with spicy pepperoni slices.',
         price: '$12',
@@ -42,21 +49,57 @@ const menuData = [
         name: 'Lemonade',
         description: 'Freshly squeezed lemonade.',
         price: '$3',
-        image: 'lemonade.jpg'
+        image: 'drink-1.jpg'
+    },
+    {
+        category: 'cold-drink',
+        name: 'mojito',
+        description: 'Freshly squeezed lemonade.',
+        price: '$3',
+        image: 'drink-7.jpg'
+    },
+    {
+        category: 'cold-drink',
+        name: 'Cold Coffee',
+        description: 'Freshly squeezed lemonade.',
+        price: '$4',
+        image: 'drink-4.jpg'
+    },
+
+    {
+        category: 'garlic-bread',
+        name: 'Garlic Bread with panner stuff',
+        description: 'Toasted bread with garlic butter and panner stuff.',
+        price: '$7',
+        image: 'bread-2.jpg'
+    },
+    {
+        category: 'garlic-bread',
+        name: 'Garlic Bread ',
+        description: 'Toasted bread with garlic butter.',
+        price: '$5',
+        image: 'bread-1.jpeg'
     },
     {
         category: 'garlic-bread',
         name: 'Garlic Bread',
         description: 'Toasted bread with garlic butter.',
         price: '$5',
-        image: 'garlic-bread.jpg'
+        image: 'bread-3.jpg'
     },
     {
         category: 'choco-lava',
         name: 'Choco Lava Cake',
         description: 'Warm chocolate cake with a gooey center.',
         price: '$6',
-        image: 'choco-lava.jpg'
+        image: 'choco-1.webp'
+    },
+    {
+        category: 'choco-lava',
+        name: 'Choco Lava Cake',
+        description: 'Warm chocolate cake with a gooey center.',
+        price: '$6',
+        image: 'choco-2.webp'
     }
 ];
 
@@ -114,3 +157,23 @@ faqItems.forEach(item => {
         }
     });
 });
+
+
+
+function openModal() {
+    document.getElementById("loginModal").style.display = "flex";
+    document.getElementById("wrapper").classList.add("blur");
+}
+
+function closeModal() {
+    document.getElementById("loginModal").style.display = "none";
+    document.getElementById("wrapper").classList.remove("blur");
+}
+
+// Close modal when clicking outside
+window.onclick = function(event) {
+    let modal = document.getElementById("loginModal");
+    if (event.target == modal) {
+        closeModal();
+    }
+}
